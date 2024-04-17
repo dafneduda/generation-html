@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Deixe seu comentário</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -19,32 +19,35 @@
     </ul>
 
     <h1>Me conte o que achou e deixe suas dicas de viagem!</h1>
-<section class="forms">
-    <form>
-        <label for="nome">Nome:</label> <br>
-        <input type="text" id="nome">
-        <br>
-        <br>
-        <label for="email">E-mail:</label> <br>
-        <input type="text" id="email">
-        <br>
-        <br>
-        <label for="comentario">O que você achou?</label> <br>
-        <textarea name="comentario" id="comentario" cols="40" rows="5"></textarea>
-        <br>
-        <br>
-        <label for="dicas">Dicas de viagem:</label> <br>
-        <textarea name="dicas" id="dicas" cols="40" rows="5"></textarea>
-        <br>
-        <button>Enviar</button>
-        <br>
-        <br>
-        <h3>Esse conteúdo foi relevante?</h3>
-        <input type="radio">Sim <br>
-        <input type="radio">Não
-    </form>
-</section>
+    <section class="forms">
+        <form>
+            <label for="nome">Nome:</label> <br>
+            <input type="text" id="nome" onkeydown ='validaNome'>
+            <div id="txtNome"></div>
+            <br>
+            <label for="email">E-mail:</label> <br>
+            <input type="text" id="email" onkeyup="validaEmail">
+            <div id="txtEmail"></div>
+            <br>
+            <label for="comentario">O que você achou?</label> <br>
+            <textarea name="comentario" id="comentario" cols="40" rows="5"></textarea>
+            <br>
+            <br>
+            <label for="dicas">Dicas de viagem:</label> <br>
+            <textarea name="dicas" id="dicas" cols="40" rows="5"></textarea>
+            <br>
+            <button>Enviar</button>
+            <br>
+            <br>
+            <h3>Esse conteúdo foi relevante?</h3>
+            <input type="radio">Sim <br>
+            <input type="radio">Não
+        </form>
+    </section>
     <h4>Obrigada por acessar a minha página :)</h4>
+
+    <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
